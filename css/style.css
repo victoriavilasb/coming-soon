@@ -29,31 +29,31 @@ body {
 header {
   text-align: center; }
 
-article .presentation {
+section .presentation {
   text-align: center; }
-article h1 {
+section h1 {
   font-size: 2rem;
   color: var(--gray);
   font-weight: 300; }
-  article h1 strong {
+  section h1 strong {
     display: inline;
     font-size: 1em;
     color: var(--dark_blue); }
-article h2 {
+section h2 {
   font-weight: 300;
   margin: 1rem; }
-article .subscription {
+section .subscription {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: 3rem 1rem;
   font-size: .8rem; }
-  article .subscription input {
+  section .subscription input {
     border: 0.5px solid var(--pale_blue);
     border-radius: 2.5rem;
     padding: .7rem 1.5rem;
     font-size: 1em;
     width: 85%; }
-  article .subscription .btn {
+  section .subscription .btn {
     border-radius: 2.5rem;
     display: flex;
     align-items: center;
@@ -64,18 +64,55 @@ article .subscription {
     color: var(--white);
     font-size: 1em;
     box-shadow: 3px 3px 20px -2px var(--hover_blue); }
-  article .subscription .btn:hover {
+  section .subscription .btn:hover {
     background-color: var(--hover_blue); }
-  article .subscription .error-message {
+  section .subscription .error-message {
     display: none;
     position: absolute;
     font-size: .6rem;
     color: var(--red);
     font-style: italic;
     padding: 5px 25px; }
-article img {
+section img {
   max-width: 700px; }
 
+@media screen and (max-width: 750px) {
+  *,
+  *:before,
+  *:after {
+    font-size: 16px; }
+
+  img {
+    max-width: 300px !important;
+    margin: auto; }
+
+  h1 {
+    font-size: 1.5rem !important; }
+
+  h2 {
+    font-size: .8rem !important; }
+
+  .subscription {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0px !important; }
+
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+
+  .btn {
+    margin: 10px !important;
+    padding: 1rem 6.4rem; }
+
+  input {
+    padding: 1rem 2.3rem !important;
+    font-size: 0.8rem !important; }
+
+  .error-message {
+    position: relative !important; } }
 footer section {
   display: flex;
   flex-direction: row;

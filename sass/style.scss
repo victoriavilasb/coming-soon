@@ -33,7 +33,7 @@ header {
   text-align: center;
 }
 
-article {
+section {
   .presentation {
     text-align: center;
   }
@@ -90,7 +90,51 @@ article {
   }
 
   img {
-    max-width: 700px;
+    max-width: 700px; 
+  }
+}
+@media screen and (max-width: 750px) {
+  *,
+  *:before,
+  *:after  {
+    font-size: 16px;
+  }
+  img {
+    max-width: 300px !important;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  h2 {
+    font-size: .8rem !important;
+  }
+
+  .subscription {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0px !important;
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 10px !important;
+    padding: 1rem 6.4rem;
+  }
+
+  input {
+    padding: 1rem 2.3rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  .error-message {
+    position: relative !important;
   }
 }
 
@@ -122,8 +166,5 @@ footer {
     text-align: center;
   }
 }
-
-
-
 
 
