@@ -1,0 +1,98 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --gray: hsl(0, 0%, 59%);
+  --pale_blue: hsl(223, 100%, 88%);
+  --white: #fff;
+  --dark_blue: hsl(209, 33%, 12%);
+  --red: hsl(354, 100%, 66%); }
+
+*,
+*:before,
+*:after {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  box-sizing: inherit;
+  padding: 0; }
+
+body {
+  color: var(--dark_blue);
+  min-width: 100vw;
+  font-family: 'Libre Franklin', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-evenly; }
+
+header {
+  text-align: center; }
+
+article .presentation {
+  text-align: center; }
+article h1 {
+  font-size: 2rem;
+  color: var(--gray);
+  font-weight: 300; }
+  article h1 strong {
+    display: inline;
+    font-size: 1em;
+    color: var(--dark_blue); }
+article h2 {
+  font-weight: 300;
+  margin: 1rem; }
+article .subscription {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 3rem 1rem;
+  font-size: .8rem; }
+  article .subscription input {
+    border: 0.5px solid var(--pale_blue);
+    border-radius: 2.5rem;
+    padding: .7rem 1.5rem;
+    font-size: 1em;
+    width: 85%; }
+  article .subscription .btn {
+    border-radius: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--blue);
+    margin: 0 10px;
+    color: var(--white);
+    font-size: 1em; }
+  article .subscription .error-message {
+    display: none;
+    position: absolute;
+    font-size: .6rem;
+    color: var(--red);
+    font-style: italic;
+    padding: 5px 25px; }
+article img {
+  max-width: 700px; }
+
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px; }
+  footer section span {
+    width: 1.8rem;
+    display: inherit;
+    border-radius: 50px;
+    color: var(--blue);
+    height: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid var(--pale_blue);
+    margin: 10px; }
+  footer section span:hover {
+    color: var(--white);
+    background-color: var(--blue); }
+footer span {
+  color: var(--gray);
+  font-size: .65rem;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

@@ -4,12 +4,17 @@
   --pale_blue: hsl(223, 100%, 88%);
   --white: #fff;
   --dark_blue: hsl(209, 33%, 12%);
+  --red: hsl(354, 100%, 66%);
 }
 
-* {
+*,
+*:before,
+*:after  {
   display: block;
   margin: 0;
   font-size: 20px;
+  box-sizing: inherit;
+  padding: 0;
 }
 
 body {
@@ -49,15 +54,16 @@ article {
   .subscription {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 3.5rem 1rem;
+    margin: 3rem 1rem;
     font-size: .8rem;
     input {
       border: .5px solid var(--pale_blue);
       border-radius: 2.5rem;
       padding: .7rem 1.5rem;
       font-size: 1em;
+      width: 85%;
     }
-    span {
+    .btn {
       border-radius: 2.5rem;
       display: flex;
       align-items: center;
@@ -67,6 +73,14 @@ article {
       margin: 0 10px;
       color: var(--white);
       font-size: 1em;
+    }
+    .error-message {
+      display: none;
+      position: absolute;
+      font-size: .6rem;
+      color: var(--red);
+      font-style: italic;
+      padding: 5px 25px;
     }
   }
 
