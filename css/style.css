@@ -1,5 +1,6 @@
 :root {
   --blue: hsl(223, 87%, 63%);
+  --hover_blue: hsla(223, 87%, 63%, 0.85);
   --gray: hsl(0, 0%, 59%);
   --pale_blue: hsl(223, 100%, 88%);
   --white: #fff;
@@ -61,7 +62,10 @@ article .subscription {
     background-color: var(--blue);
     margin: 0 10px;
     color: var(--white);
-    font-size: 1em; }
+    font-size: 1em;
+    box-shadow: 3px 3px 20px -2px var(--hover_blue); }
+  article .subscription .btn:hover {
+    background-color: var(--hover_blue); }
   article .subscription .error-message {
     display: none;
     position: absolute;
